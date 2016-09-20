@@ -70,17 +70,22 @@
           opacity: 1;
         }
 
-        .demo .my-slider .part {
-            width: 11%;
-            float: left;
+        .my-slider .multiple {
+          display: box;
+          display: -webkit-box;
         }
-    </style>
+
+        .my-slider .part {
+          box-flex: 1.0;
+          -webkit-box-flex: 1.0;
+        }
+   </style>
 </head>
 <body>
     <div class="demo">
         <div class="my-slider">
             <ul>
-                <li>
+                <li class="multiple">
                     <p class="part">Slide#1</p>
                     <p class="part">Slide#2</p>
                     <p class="part">Slide#3</p>
